@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block lang %}{{ content.lang if content.lang else "en" }}{% endblock %}
+{% block title %}{{ content.title }}{% endblock %}
+
+{% block head %}
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="{{ config.title }} Atom Feed" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,Kreon:400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    {% if content.highlight -%}
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css">
+    {%- endif %}
+{% endblock %}
+
+{% block content %}
+<div class="body">
+    <div class="content-wrapper">
+        <div class="content {% if content.css_class %}{{ content.css_class }}{% endif %}">
+            {{ content.text|markdown }}
+            {% if content.modified -%}
+            <div class="content-last-modified"><small><em>Last modified: {{ content.modified }} UTC</em></small></div>
+            {%- endif %}
+            {% if content.prev or content.next %}
+            <div class="content-prev-next">
+                <div class="content-prev">
+                    {% if content.prev -%}
+                    <a class="content-prev-link" href="{{ content.prev.url }}">
+                        <i class="fa fa-angle-double-left fa-fw"></i><span class="ib">{{ content.prev.title }}</span>
+                    </a>
+                    {%- endif %}
+                </div>
+                <div class="content-next">
+                    {% if content.next -%}
+                    <a class="content-next-link" href="{{ content.next.url }}">
+                        <span class="ib">{{ content.next.title }}</span><i class="fa fa-angle-double-right fa-fw"></i>
+                    </a>
+                    {%- endif %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="sidebar-wrapper">
+        {% include "sidebar.html" %}
+    </div>
+</div>
+{% endblock %}
+
+{% block body_js %}
+{{ super() }}
+{% if content.highlight -%}
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{%- endif %}
+{% endblock %}

@@ -1,0 +1,26 @@
+<div class="sidebar">
+    <div class="sidebar-header">
+        <div class="blog-title header">{{ config.title }}</div>
+        {% if config.subtitlee -%}
+        <div class="blog-subtitle">{{ config.subtitle }}</div>
+        {%- endif %}
+    </div>
+    <nav class="blog-nav">
+        <ul class="blog-nav-list">
+            <li class="blog-nav-item"><a class="blog-nav-link" href="/">Blog</a></li>
+            <li class="blog-nav-item"><a class="blog-nav-link" href="/about/">About</a></li>
+        </ul>
+    </nav>
+    <div class="social-links">
+        <a class="social-link" href="https://github.com/ysegorov/" title="GitHub"><i class="fa fa-github fa-2x"></i></a>
+        <a class="social-link" href="https://bitbucket.com/ysegorov/" title="BitBucket"><i class="fa fa-bitbucket fa-2x"></i></a>
+    </div>
+    {% if config.quote.text -%}
+    <div class="sidebar-quote-container">
+        <blockquote class="sidebar-quote">
+            <p class="sidebar-quote-text">{{ config.quote.text }}</p>
+            <cite class="sidebar-quote-author">{{ config.quote.author }}</cite>
+        </blockquote>
+    </div>
+    {%- endif %}
+</div>

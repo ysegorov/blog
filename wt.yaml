@@ -1,0 +1,135 @@
+---
+title: Words And Thoughts
+subtitle: Yet another web developer blog
+url: https://ysegorov.github.com
+feed_id_domain: ysegorov.github.com
+author:  Yuri Egorov
+
+build:
+    output: output/
+    static: true
+
+quote:
+    text: I know that I know nothing
+    author: Socrates
+
+posts:
+    - src: 20160704-snabbdom-svg-loader.md
+      url: /2016/svg-snabbdom-loader/
+      title: Webpack loader to use svg icons as snabbdom VNode
+      modified: 2016-07-04T12:45:00+04:00
+      highlight: true
+
+    - src: 20160117-django-debug.md
+      url: /2016/django-debug/
+      title: Django project debugging
+      modified: 2016-01-17T16:32:00+04:00
+      summary: Simple tools to debug complex code
+      highlight: true
+
+    - src: 20150629-juvi.md
+      url: /2015/juvi/
+      title: Meet Juvi
+      modified: 2015-06-29T12:44:00+04:00
+      summary: Introduction to Juvi - small client-side library
+      highlight: true
+
+    - src: 20150406-jukoro-0.1.2.md
+      url: /2015/jukoro-0.1.2/
+      title: Jukoro 0.1.2 release
+      modified: 2015-04-06T21:01:00+04:00
+      summary: Jukoro promo
+
+    - src: 20150401-jukoro-docs-using-sphinx.md
+      url: /2015/jukoro-docs-using-sphinx/
+      title: Jukoro documentation using Sphinx
+      modified: 2015-04-01T14:40:00+04:00
+      highlight: true
+
+    - src: 20150331-markdown-live.md
+      url: /2015/markdown-live/
+      title: Markdown preview
+      modified: 2015-03-31T16:02:00+04:00
+      created: 2015-03-31T13:52:00+04:00
+
+    - src: 20150325-excellent-article.md
+      url: /2015/excellent-article/
+      title: Excellent article
+      modified: 2015-04-06T20:58:00+04:00
+      created: 2015-03-25T10:03:00+04:00
+      summary: Excellent article about programming
+
+    - src: 20150326-micro-datetime-parsing-benchmark.md
+      url: /2015/micro-datetime-parsing-benchmark/
+      title: Micro datetime parsing benchmark
+      summary: Notes on datetime parsing in python2 to remember
+      modified: 2015-03-26T11:05:00+04:00
+      highlight: true
+
+    - src: 20150324-chtd.md
+      url: /2015/chtd/
+      title: Chtd
+      modified: 2015-03-28T08:25:00+04:00
+      created: 2015-03-24T22:15:00+04:00
+      summary: Working for Chtd
+
+    - src: 20150301-grief.md
+      url: /2015/grief/
+      title: Grief
+      modified: 2015-03-01T10:15:00+04:00
+
+    - src: 20150130-module-level-abstraction-in-python.md
+      url: /2015/module-level-abstraction-in-python/
+      title: Module level abstraction in python
+      modified: 2015-01-30T21:40:00+04:00
+      highlight: true
+
+    - src: 20150130-initial-commit.md
+      url: /2015/initial-commit/
+      title: Initial commit
+      modified: 2015-01-30T20:42:00+04:00
+
+pages:
+    - src: about.md
+      css_class: page-about
+      url: /about/
+      title: About
+      modified: 2016-09-12T15:10:00+04:00
+
+    - src: cv.md
+      css_class: page-cv
+      url: /cv/
+      title: CV
+
+    - src: words.md
+      url: /words/
+      title: Слова
+      lang: ru
+      modified: 2015-01-29T20:38:00+04:00
+
+    - src: job_links.md
+      url: /job-links/
+      title: Job related links
+      modified: 2015-03-26T21:40:00+04:00
+
+templates:
+    mainpage: mainpage.html
+    page: content.html
+    post: content.html
+    feed: atom.xml
+
+directories:
+    static: static/
+
+jinja_extensions:
+    - jinja2.ext.i18n
+    - jinja2.ext.do
+    - jinja2.ext.loopcontrols
+    - jinja2.ext.with_
+    - jinja2.ext.autoescape
+
+markdown_extensions:
+    - markdown.extensions.extra
+    - markdown.extensions.toc
+
+...
