@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+wt build
+ghp-import -m "update blog" output/
+git push git@github.com:ysegorov/ysegorov.github.io.git gh-pages:master
