@@ -52,6 +52,11 @@ code {
     font-size: 13px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
+blockquote {
+    border-left: 10px solid #eee;
+    margin-left: 24px;
+    padding-left: 18px;
+}
 
 /* --- sidebar --- */
 .sidebar-wrapper {
@@ -136,6 +141,8 @@ code {
     text-align: center;
     margin: 0;
     border-top: 1px solid #cfd8dc;
+    border-left: none;
+    padding-left: 0;
 }
 .sidebar-quote-text {
     font-size: 1.2em;

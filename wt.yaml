@@ -14,6 +14,11 @@ quote:
     author: Socrates
 
 posts:
+    - src: 20161011-do.md
+      url: /2016/do/
+      title: DO
+      modified: 2016-10-11T11:55:00+04:00
+
     - src: 20160930-au6601.md
       url: /2016/au6601/
       title: Alcor Micro AU6601 PCI-E Flash card reader controller
