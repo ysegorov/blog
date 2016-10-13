@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}{{ config.title }}{% endblock %}
+{% block title %}{{ config.title }}{% if paginate_by and current_page > 1 %} | Page {{ current_page }}{% endif %}{% endblock %}
 
 {% block head %}
     <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="{{ config.title }} Atom Feed" />
@@ -16,7 +16,7 @@
     <div class="content-wrapper">
         <div class="content">
             <h1 class="mainpage-title">Blog</h1>
-            {% for post in posts|reverse %}
+            {% for post in posts %}
             <article class="blog-post">
                 <header class="blog-post-header">
                     <h2 class="blog-post-title"><a class="blog-post-link" href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
@@ -26,6 +26,25 @@
                 </footer>
             </article>
             {% endfor %}
+
+            {% if prev_page or next_page %}
+            <div class="content-prev-next">
+                <div class="content-prev">
+                {% if prev_page %}
+                    <a class="content-prev-link" href="{{ prev_page }}">
+                        <i class="fa fa-angle-double-left fa-fw"></i><span class="ib">previous</span>
+                    </a>
+                {%- endif %}
+                </div>
+                <div class="content-next">
+                {% if next_page %}
+                    <a class="content-next-link" href="{{ next_page }}">
+                        <span class="ib">next</span><i class="fa fa-angle-double-right fa-fw"></i>
+                    </a>
+                {%- endif %}
+                </div>
+            </div>
+            {% endif %}
         </div>
     </div>
     <div class="sidebar-wrapper">

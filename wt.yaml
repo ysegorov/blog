@@ -13,6 +13,10 @@ quote:
     text: I know that I know nothing
     author: Socrates
 
+paginate:
+    by: 10
+    orphans: 3
+
 posts:
     - src: 20161011-do.md
       url: /2016/do/
