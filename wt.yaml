@@ -15,7 +15,8 @@ quote:
 
 paginate:
     by: 10
-    orphans: 3
+    orphans: 2
+    #url: /pager/{page_number}.html
 
 posts:
     - src: 20161011-do.md
