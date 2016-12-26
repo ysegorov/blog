@@ -2,12 +2,18 @@
 title: Words And Thoughts
 subtitle: Yet another web developer blog
 url: https://ysegorov.github.com
-feed_id_domain: ysegorov.github.com
 author:  Yuri Egorov
+
+feed:
+    domain: ysegorov.github.com
 
 build:
     output: output/
     static: true
+    feed: true
+
+verify:
+    links: true
 
 quote:
     text: I know that I know nothing
@@ -16,7 +22,8 @@ quote:
 paginate:
     by: 10
     orphans: 2
-    #url: /pager/{page_number}.html
+    mainpage: true
+    url: /page{page_number}.html
 
 posts:
     - src: 20161011-do.md
@@ -137,15 +144,16 @@ templates:
 directories:
     static: static/
 
-jinja_extensions:
-    - jinja2.ext.i18n
-    - jinja2.ext.do
-    - jinja2.ext.loopcontrols
-    - jinja2.ext.with_
-    - jinja2.ext.autoescape
+jinja:
+    extensions:
+        - jinja2.ext.i18n
+        - jinja2.ext.do
+        - jinja2.ext.loopcontrols
+        - jinja2.ext.with_
+        - jinja2.ext.autoescape
 
-markdown_extensions:
-    - markdown.extensions.extra
-    - markdown.extensions.toc
+    markdown_extensions:
+        - markdown.extensions.extra
+        - markdown.extensions.toc
 
 ...

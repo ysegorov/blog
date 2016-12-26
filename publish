@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
 wt build
+if [ $? -gt 0 ]; then
+    exit 1
+fi
 ghp-import -m "update blog" output/
 git push git@github.com:ysegorov/ysegorov.github.io.git gh-pages:master
+
+echo -e "\n[ok]"

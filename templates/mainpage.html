@@ -16,7 +16,7 @@
     <div class="content-wrapper">
         <div class="content">
             <h1 class="mainpage-title">Blog</h1>
-            {% for post in paginator.posts %}
+            {% for post in paginator.items %}
             <article class="blog-post">
                 <header class="blog-post-header">
                     <h2 class="blog-post-title"><a class="blog-post-link" href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
