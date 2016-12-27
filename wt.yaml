@@ -26,6 +26,11 @@ paginate:
     url: /page{page_number}.html
 
 posts:
+    - src: 20161227-jenkinsfile.md
+      url: /2016/jenkinsfile/
+      title: Pipeline As a Code With Jenkins
+      modified: 2016-12-27T14:45:00+04:00
+
     - src: 20161011-do.md
       url: /2016/do/
       title: DO
