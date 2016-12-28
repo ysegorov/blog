@@ -13,7 +13,7 @@ build:
     feed: true
 
 verify:
-    links: true
+    links: false
 
 quote:
     text: I know that I know nothing
@@ -26,6 +26,12 @@ paginate:
     url: /page{page_number}.html
 
 posts:
+    - src: 20161228-virtualenv.md
+      url: /2016/virtualenv/
+      title: Self-made Virtualenv Wrapper
+      modified: 2016-12-28T12:27:00+04:00
+      highlight: true
+
     - src: 20161227-jenkinsfile.md
       url: /2016/jenkinsfile/
       title: Pipeline As a Code With Jenkins
