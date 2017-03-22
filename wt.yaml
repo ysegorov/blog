@@ -26,6 +26,11 @@ paginate:
     url: /page{page_number}.html
 
 posts:
+    - src: 20170322-wt.md
+      url: /2017/wt/
+      title: Static blog generator
+      modified: 2017-03-22T09:20:00+04:00
+
     - src: 20161228-virtualenv.md
       url: /2016/virtualenv/
       title: Self-made Virtualenv Wrapper
