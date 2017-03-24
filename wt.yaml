@@ -26,6 +26,12 @@ paginate:
     url: /page{page_number}.html
 
 posts:
+    - src: 20170324-logger.md
+      url: /2017/logger/
+      title: Logging service using epoll
+      modified: 2017-03-24T10:45:00+04:00
+      highlight: true
+
     - src: 20170322-wt.md
       url: /2017/wt/
       title: Static blog generator
