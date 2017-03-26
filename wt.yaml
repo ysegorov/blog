@@ -26,6 +26,11 @@ paginate:
     url: /page{page_number}.html
 
 posts:
+    - src: 20170326-moon.md
+      url: /2017/moon/
+      title: The finger pointing at the moon is not the moon
+      modified: 2017-03-26T16:51:00+04:00
+
     - src: 20170324-logger.md
       url: /2017/logger/
       title: Logging service using epoll
