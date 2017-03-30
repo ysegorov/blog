@@ -26,6 +26,12 @@ paginate:
     url: /page{page_number}.html
 
 posts:
+    - src: 20170330-logger-part2.md
+      url: /2017/logger-2/
+      title: Logger service using epoll - Part 2
+      modified: 2017-03-30T20:45:00+04:00
+      highlight: true
+
     - src: 20170326-moon.md
       url: /2017/moon/
       title: The finger pointing at the moon is not the moon
@@ -33,7 +39,7 @@ posts:
 
     - src: 20170324-logger.md
       url: /2017/logger/
-      title: Logging service using epoll
+      title: Logger service using epoll - Part 1
       modified: 2017-03-24T10:45:00+04:00
       highlight: true
 
