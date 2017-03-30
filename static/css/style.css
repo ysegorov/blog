@@ -216,6 +216,16 @@ blockquote {
     background: url(//www.gravatar.com/avatar/dcdb981a7c6233044232403bc61c73b1.jpg) calc(100% - 24px) 24px no-repeat;
 }
 
+.note {
+    background-color: rgba(235, 235, 235, .5);
+    padding: 12px;
+    font-style: italic;
+    text-align: center;
+}
+.note p {
+    margin: 0;
+}
+
 /* --- mainpage --- */
 .mainpage-title {
     text-align: right;
@@ -255,4 +265,8 @@ blockquote {
     line-height: 1.2 !important;
     font-size: 12px !important;
     font-family: inherit !important;
+}
+/* --- highlight --- */
+.hljs {
+    max-height: 320px;
 }
