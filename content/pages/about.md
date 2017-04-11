@@ -4,7 +4,7 @@ I am Yuri Egorov, web developer currently living in Moscow, Russia.
 
 ## Summary
 
-I think of myself as a [generalist][generalist].  
+I think of myself as a [generalist][generalist].
 I try to use simple solutions when possible to have control over project.
 I prefer to be focused on something. It can be a project, a library or anything
 else. This way I can be sure I'll be effective in my work.
@@ -15,10 +15,9 @@ when it's neсessary.
 
 My basic toolchain consists of [Django][django] / [Tornado][tornado] /
 [Falcon][falcon] / [Flask][flask] web frameworks for backend tasks.
-I have experience working with **jython** for some specific tasks.  
-For frontend tasks I'm exploring FRP (**Elm** looks pretty nice) and find it
-very interesting.
-Working for [Chtd][chtd] I've created frontend js **bundler** using **nodejs**.  
+I have experience working with **jython** for some specific tasks.
+For frontend tasks I'm exploring FRP and find it very interesting.
+Working for [Chtd][chtd] I've created frontend js **bundler** using **nodejs**.
 I've worked with **MySQL**, **PostgreSQL** and **MongoDB** and in case I would
 have to pick one [PostgreSQL][postgresql] will be my choice.
 [Redis][redis] is my choice of fast in-memory storage.
@@ -28,23 +27,21 @@ I write code in **vim** and prefer to use **git** when possible.
 I run **Linux** on my desktop since 2003.
 Since 2012 I am running ArchLinux due to its awesome [philosophy][archlinux].
 Before Arch I was using Red Hat and Gentoo and besides I have experience
-working with Ubuntu and RedHat/CentOS.  
+working with Ubuntu and RedHat/CentOS.
 I can deploy and manage Linux server and can configure network services when
-needed (*dns, web, email* and *others*).  
+needed (*dns, web, email* and *others*).
 I have experience working (which means deployment and everyday usage) with
 [jenkins][jenkins], [sentry][sentry], [ansible][ansible], [vagrant][vagrant]
 and worked with **AWS**, **Digital Ocean** and **Linode**.
 
-
-I have an [INTP-T personality][personality] and [this detailed article][intp]
-on the subject surprised me a lot - almost everything applies to me.
+I have an [INTP-T personality][personality].
 
 Language
 --------
 
 My native language is Russian.
 I've studied English more then ten years ago and from time to time used it
-(not too often really).  
+(not too often really).
 I'll do my best while blogging in English.
 
 
