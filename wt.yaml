@@ -1,11 +1,11 @@
 ---
 title: Words And Thoughts
 subtitle: Yet another web developer blog
-url: https://ysegorov.github.com
+url: https://ysegorov.github.io
 author:  Yuri Egorov
 
 feed:
-    domain: ysegorov.github.com
+    domain: ysegorov.github.io
 
 build:
     output: output/
@@ -150,7 +150,7 @@ pages:
       css_class: page-about
       url: /about/
       title: About
-      modified: 2016-09-12T15:10:00+04:00
+      modified: 2017-04-11T09:27:00+04:00
 
     - src: cv.md
       css_class: page-cv
