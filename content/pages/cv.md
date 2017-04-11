@@ -20,7 +20,7 @@ Full Stack Python/Javascript Web Developer
 - *Programming languages*: Python, Javascript
 - *Data storage*: PostgreSQL, Redis, MongoDB
 - *Frameworks and libraries*:
-    * *Python*: Django, Tornado, Falcon, Flask, psycopg2
+    * *Python*: Django, Tornado, Falcon, Flask, psycopg2, pytest
     * *Javascript*: snabbdom, flyd, ramda, underscore/lodash, backbone, jQuery
     * *Jython*: Apache POI
     * *CSS*: PostCSS, LESS, SASS
@@ -36,8 +36,14 @@ Full Stack Python/Javascript Web Developer
 - Higher Military Engineering School of Communications, Saint-Petersburg,
   1989-1994, Department of Automated Control Systems, Software Engineer
 
-### Projects
+### Open source projects
 
+- [wt][wt] - static site generator (*python3*), [documentation][wt-docs]
+
+### Web Projects
+
+- 2016, [https://tolsha.ru][tolsha] (in Russian),
+  Tolsha Pottery (static site made with [wt][wt])
 - 2013, http://gnarc.ru, Electronic Archive of Gnezdovo Area Archaeological Data
   (*tornado/mongodb/redis/backbone/bootstrap*), online system to manage and view
   archaeological data (metadata, photos, reports) with server-side pdf files
@@ -56,6 +62,7 @@ Full Stack Python/Javascript Web Developer
 
 ### Job experience
 
+- [Passware Inc.][passware], 2016, Software Engineer
 - Chtd (BI solutions), 2011-2015, Software Engineer ([overview][chtd])
 - Trans-IT (System integrator for metro), 2007-2010,
   Head of the Applied Systems Department
@@ -70,3 +77,7 @@ Full Stack Python/Javascript Web Developer
 
 
 [chtd]: /2015/chtd/
+[wt]: https://github.com/ysegorov/wt/
+[wt-docs]: https://ysegorov.github.io/wt-docs/
+[tolsha]: https://tolsha.ru
+[passware]: https://www.passware.com
