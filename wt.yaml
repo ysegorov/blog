@@ -26,6 +26,12 @@ paginate:
     url: /page{page_number}.html
 
 posts:
+    - src: 20170413-dotenv.md
+      url: /2017/dotenv/
+      title: Dotenv
+      modified: 2017-04-13T20:40:00+04:00
+      highlight: true
+
     - src: 20170412-reloadable.md
       url: /2017/reloadable/
       title: Reloadable decorator
