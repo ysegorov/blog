@@ -20,12 +20,11 @@ Full Stack Python/Javascript Web Developer
 - *Programming languages*: Python, Javascript
 - *Data storage*: PostgreSQL, Redis, MongoDB
 - *Frameworks and libraries*:
-    * *Python*: Django, Tornado, Falcon, Flask, psycopg2, pytest
-    * *Javascript*: snabbdom, flyd, ramda, underscore/lodash, backbone, jQuery
-    * *Jython*: Apache POI
+    * *Python*: Django, Tornado, Flask, psycopg2, pytest
+    * *Javascript*: **vanilla**, @yagni-js/yagni, @yagni-js/yagni-dom and others
     * *CSS*: PostCSS, LESS, SASS
 - *Developer tools*: vim, git, vagrant
-- *Assets management/building*: postcss, webpack, gulp, grunt
+- *Assets management/building*: postcss, rollup, webpack, gulp, grunt
 - *Infrastructure, deploy and monitoring*: AWS, Codeship, nginx, uwsgi,
   gunicorn, supervisor, fabric, sentry, jenkins, ansible
 - *Operating systems*: Linux (ArchLinux, Ubuntu, Gentoo, CentOS, RedHat)
@@ -39,6 +38,18 @@ Full Stack Python/Javascript Web Developer
 ### Open source projects
 
 - [wt][wt] - static site generator (*python3*), [documentation][wt-docs]
+- [yagni][yagni] - functional js library for frontend
+- [yagni-dom][yagni-dom] - functional js library for DOM API interactions
+- [yagni-parser][yagni-parser] - functional js library for HTML to
+  [yagni-dom][yagni-dom] compatible js module conversion
+- [yagni-router][yagni-router] - functional js library for browser-based
+  routing
+- [rollup-plugin-yagni][rollup-plugin-yagni] - rollup plugin for HTML to
+  [yagni-dom][yagni-dom] compatible js module conversion (uses
+  [yagni-parser][yagni-parser] under the hood)
+- [yagni-loader][yagni-loader] - webpack plugin for HTML to
+  [yagni-dom][yagni-dom] compatible js module conversion (uses
+  [yagni-parser][yagni-parser] under the hood)
 
 ### Web Projects
 
@@ -81,3 +92,9 @@ Full Stack Python/Javascript Web Developer
 [wt-docs]: https://ysegorov.github.io/wt-docs/
 [tolsha]: https://tolsha.ru
 [passware]: https://www.passware.com
+[yagni]: https://github.com/ysegorov/yagni/
+[yagni-dom]: https://github.com/ysegorov/yagni-dom/
+[yagni-parser]: https://github.com/ysegorov/yagni-parser/
+[yagni-router]: https://github.com/ysegorov/yagni-router/
+[yagni-loader]: https://github.com/ysegorov/yagni-loader/
+[rollup-plugin-yagni]: https://github.com/ysegorov/rollup-plugin-yagni/
