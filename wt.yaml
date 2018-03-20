@@ -167,7 +167,7 @@ pages:
       css_class: page-about
       url: /about/
       title: About
-      modified: 2017-04-11T09:27:00+04:00
+      modified: 2018-03-20T09:20:00+04:00
 
     - src: cv.md
       css_class: page-cv
