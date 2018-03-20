@@ -14,10 +14,16 @@ and **javascript** for frontend tasks and can write **HTML/CSS/SASS/LESS**
 when it's neсessary.
 
 My basic toolchain consists of [Django][django] / [Tornado][tornado] /
-[Falcon][falcon] / [Flask][flask] web frameworks for backend tasks.
+[Flask][flask] web frameworks for backend tasks.
 I have experience working with **jython** for some specific tasks.
-For frontend tasks I'm exploring FRP and find it very interesting.
+
+For frontend tasks I'm exploring functional programming and find it very
+interesting. Currently I am working on [@yagni-js][yagni-js] - several
+open-sourced (unlicensed) **javascript** libraries, made with **functional**
+and **stateless** mantras in mind.
+
 Working for [Chtd][chtd] I've created frontend js **bundler** using **nodejs**.
+
 I've worked with **MySQL**, **PostgreSQL** and **MongoDB** and in case I would
 have to pick one [PostgreSQL][postgresql] will be my choice.
 [Redis][redis] is my choice of fast in-memory storage.
@@ -31,10 +37,10 @@ working with Ubuntu and RedHat/CentOS.
 I can deploy and manage Linux server and can configure network services when
 needed (*dns, web, email* and *others*).
 I have experience working (which means deployment and everyday usage) with
-[jenkins][jenkins], [sentry][sentry], [ansible][ansible], [vagrant][vagrant]
-and worked with **AWS**, **Digital Ocean** and **Linode**.
+[jenkins][jenkins], [sentry][sentry] and worked with **AWS**, **Digital Ocean**
+and **Linode**.
+From time to time I'm using [ansible][ansible] and [vagrant][vagrant].
 
-I have an [INTP-T personality][personality].
 
 Language
 --------
@@ -58,13 +64,10 @@ My CV is available [here][cv].
 
 
 [generalist]: http://alistapart.com/article/the-specialist-generalist-balance
-[personality]: http://www.16personalities.com/profiles/5680ed0db1257
-[intp]: http://www.intp.org/intprofile.html
 [archlinux]: https://wiki.archlinux.org/index.php/The_Arch_Way
 [django]: https://www.djangoproject.com
 [tornado]: http://www.tornadoweb.org
 [flask]: http://flask.pocoo.org/
-[falcon]: https://falconframework.org/
 [postgresql]: https://www.postgresql.org/
 [redis]: http://redis.io
 [backbone]: http://backbonejs.org
@@ -74,3 +77,4 @@ My CV is available [here][cv].
 [vagrant]: https://www.vagrantup.com/
 [chtd]: /2015/chtd/
 [cv]: /cv/
+[yagni-js]: https://www.npmjs.com/org/yagni-js
