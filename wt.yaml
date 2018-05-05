@@ -26,6 +26,12 @@ paginate:
     url: /page{page_number}.html
 
 posts:
+    - src: 20180505-au6601-2.md
+      url: /2018/au6601-2/
+      title: AU6601 PCI-E Flash card reader and Linux kernel 4.16
+      modified: 2018-05-05T11:12:00+04:00
+      highlight: true
+
     - src: 20170413-dotenv.md
       url: /2017/dotenv/
       title: Dotenv
