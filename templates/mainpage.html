@@ -19,7 +19,7 @@
             {% for post in paginator.items %}
             <article class="blog-post">
                 <header class="blog-post-header">
-                    <h2 class="blog-post-title"><a class="blog-post-link" href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
+                    <h2 class="blog-post-title"><a class="blog-post-link" href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}{% if post.draft %}&nbsp;<sup class="blog-post-draft-marker">draft</sup>{% endif %}</a></h2>
                 </header>
                 <footer class="blog-post-footer">
                     <span class="blog-post-published">{{ post.published.strftime("%A, %d %B %Y") if post.published else post.modified.strftime("%A, %d %B %Y") }}</span>

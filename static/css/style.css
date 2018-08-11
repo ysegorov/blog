@@ -21,6 +21,17 @@ html, body, .body {
     display: flex;
     min-height: 100vh;
 }
+.draft:before {
+    position: fixed;
+    right: 0;
+    top: 0;
+    content: 'draft';
+    color: crimson;
+    font-size: 24px;
+    font-weight: 700;
+    transform: rotate(45deg);
+    transform-origin: 0;
+}
 
 h1, h2 {
     line-height: 48px;
@@ -244,6 +255,11 @@ blockquote {
 .blog-post-link:focus {
     text-decoration: none;
     color: #268bd2;
+}
+.blog-post-draft-marker {
+    font-weight: 400;
+    font-size: .85rem;
+    color: maroon;
 }
 .blog-post-footer {
     margin: 0 0 12px;
