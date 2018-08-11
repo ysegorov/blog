@@ -1,3 +1,9 @@
+---
+url: /2017/reloadable/
+title: Reloadable decorator
+modified: 2017-04-12T20:12:00+04:00
+highlight: true
+---
 # Reloadable decorator
 
 [wt][wt] has a feature I'd like to share here. It was one of the first features

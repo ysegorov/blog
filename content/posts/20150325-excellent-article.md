@@ -1,3 +1,10 @@
+---
+url: /2015/excellent-article/
+title: Excellent article
+modified: 2015-04-06T20:58:00+04:00
+created: 2015-03-25T10:03:00+04:00
+summary: Excellent article about programming
+---
 # Excellent article
 
 

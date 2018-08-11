@@ -1,3 +1,9 @@
+---
+url: /2015/markdown-live/
+title: Markdown preview
+modified: 2015-03-31T16:02:00+04:00
+created: 2015-03-31T13:52:00+04:00
+---
 # Markdown preview
 
 *Update*. For [reStructuredText][rst] there is an excellent [restview][restview]

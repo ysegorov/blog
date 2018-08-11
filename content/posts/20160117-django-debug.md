@@ -1,3 +1,10 @@
+---
+url: /2016/django-debug/
+title: Django project debugging
+modified: 2016-01-17T16:32:00+04:00
+summary: Simple tools to debug complex code
+highlight: true
+---
 # Django project debugging
 
 

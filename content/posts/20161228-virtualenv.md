@@ -1,3 +1,9 @@
+---
+url: /2016/virtualenv/
+title: Self-made Virtualenv Wrapper
+modified: 2016-12-28T12:27:00+04:00
+highlight: true
+---
 # Self-made Virtualenv Wrapper
 
 

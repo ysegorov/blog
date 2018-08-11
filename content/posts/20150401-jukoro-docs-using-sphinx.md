@@ -1,3 +1,9 @@
+---
+url: /2015/jukoro-docs-using-sphinx/
+title: Jukoro documentation using Sphinx
+modified: 2015-04-01T14:40:00+04:00
+highlight: true
+---
 # Jukoro documentation using Sphinx
 
 

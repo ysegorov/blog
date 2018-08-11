@@ -1,3 +1,9 @@
+---
+url: /job-links/
+title: Job related links
+modified: 2015-03-26T21:40:00+04:00
+draft: true
+---
 # Job related links
 
 * [Megamozg article][1]

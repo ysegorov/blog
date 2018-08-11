@@ -1,3 +1,8 @@
+---
+css_class: page-cv
+url: /cv/
+title: CV
+---
 # CV
 
 ## Yuri Egorov

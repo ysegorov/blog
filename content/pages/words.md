@@ -1,3 +1,10 @@
+---
+url: /words/
+title: Слова
+lang: ru
+modified: 2015-01-29T20:38:00+04:00
+draft: true
+---
 # Слова
 
 

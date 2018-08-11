@@ -1,3 +1,9 @@
+---
+css_class: page-about
+url: /about/
+title: About
+modified: 2018-03-20T09:20:00+04:00
+---
 # About
 
 I am Yuri Egorov, web developer currently living in Moscow, Russia.

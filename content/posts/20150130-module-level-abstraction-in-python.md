@@ -1,3 +1,9 @@
+---
+url: /2015/module-level-abstraction-in-python/
+title: Module level abstraction in python
+modified: 2015-01-30T21:40:00+04:00
+highlight: true
+---
 # Module-level abstraction in Python
 
 Sample code first.

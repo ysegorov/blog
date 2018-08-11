@@ -1,3 +1,9 @@
+---
+url: /2016/svg-snabbdom-loader/
+title: Webpack loader to use svg icons as snabbdom VNode
+modified: 2016-07-04T12:45:00+04:00
+highlight: true
+---
 # Webpack loader to use svg icons as snabbdom VNode
 
 

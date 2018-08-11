@@ -1,3 +1,10 @@
+---
+url: /2015/micro-datetime-parsing-benchmark/
+title: Micro datetime parsing benchmark
+summary: Notes on datetime parsing in python2 to remember
+modified: 2015-03-26T11:05:00+04:00
+highlight: true
+---
 # Micro datetime parsing benchmark
 
 Just a note for myself about datetime parsing in python.

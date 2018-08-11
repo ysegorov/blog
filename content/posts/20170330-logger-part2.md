@@ -1,3 +1,9 @@
+---
+url: /2017/logger-2/
+title: Logger service using epoll - Part 2
+modified: 2017-03-30T20:45:00+04:00
+highlight: true
+---
 # Logger service using epoll - Part 2
 
 <div class="note" markdown="1">

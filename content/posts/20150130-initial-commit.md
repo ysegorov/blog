@@ -1,3 +1,8 @@
+---
+url: /2015/initial-commit/
+title: Initial commit
+modified: 2015-01-30T20:42:00+04:00
+---
 # Initial commit
 
 

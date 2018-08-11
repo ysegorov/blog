@@ -1,3 +1,8 @@
+---
+url: /2016/jenkinsfile/
+title: Pipeline As a Code With Jenkins
+modified: 2016-12-27T14:45:00+04:00
+---
 # Pipeline as a code with Jenkins
 
 
