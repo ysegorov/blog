@@ -4,9 +4,6 @@ subtitle: Yet another web developer blog
 url: https://ysegorov.github.io
 author:  Yuri Egorov
 
-feed:
-    domain: ysegorov.github.io
-
 build:
     output: output/
     static: true
@@ -43,9 +40,5 @@ jinja:
         - jinja2.ext.loopcontrols
         - jinja2.ext.with_
         - jinja2.ext.autoescape
-
-    markdown_extensions:
-        - markdown.extensions.extra
-        - markdown.extensions.toc
 
 ...

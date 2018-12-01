@@ -4,12 +4,12 @@
 {% block title %}{% if content.draft %}(draft) {% endif %}{{ content.title }}{% endblock %}
 
 {% block head %}
-    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="{{ config.title }} Atom Feed" />
+<link href="{{ baseurl('/atom.xml') }}" type="application/atom+xml" rel="alternate" title="{{ config.title }} Atom Feed" />
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,Kreon:400,700">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="{{ baseurl('/css/normalize.css') }}">
+    <link rel="stylesheet" href="{{ baseurl('/css/style.css') }}">
     {% if content.highlight -%}
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css">
     {%- endif %}
@@ -19,7 +19,7 @@
 <div class="body{% if content.draft %} draft{% endif %}">
     <div class="content-wrapper">
         <div class="content {% if content.css_class %}{{ content.css_class }}{% endif %}">
-            {{ content.text|markdown }}
+            {{ markdown(content.text) }}
             {% if content.modified -%}
             <div class="content-last-modified"><small><em>Last modified: {{ content.modified }} UTC</em></small></div>
             {%- endif %}
