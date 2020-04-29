@@ -1,7 +1,7 @@
 <div class="sidebar">
     <div class="sidebar-header">
         <div class="blog-title header">{{ config.title }}</div>
-        {% if config.subtitlee -%}
+        {% if config.subtitle -%}
         <div class="blog-subtitle">{{ config.subtitle }}</div>
         {%- endif %}
     </div>
@@ -12,15 +12,13 @@
         </ul>
     </nav>
     <div class="social-links">
-        <a class="social-link" href="https://github.com/ysegorov/" title="GitHub"><i class="fa fa-github fa-2x"></i></a>
-        <a class="social-link" href="https://bitbucket.com/ysegorov/" title="BitBucket"><i class="fa fa-bitbucket fa-2x"></i></a>
+        <a class="social-link" href="https://github.com/ysegorov/" title="GitHub">{% include "svg/github.svg.html" %}</a>
+        <!-- <a class="social-link" href="https://bitbucket.com/ysegorov/" title="BitBucket"><i class="fa fa-bitbucket fa-2x"></i></a> -->
     </div>
-    {% if config.quote.text -%}
     <div class="sidebar-quote-container">
         <blockquote class="sidebar-quote">
-            <p class="sidebar-quote-text">{{ config.quote.text }}</p>
-            <cite class="sidebar-quote-author">{{ config.quote.author }}</cite>
+            <p class="sidebar-quote-text">I know that I know nothing</p>
+            <cite class="sidebar-quote-author">Socrates</cite>
         </blockquote>
     </div>
-    {%- endif %}
 </div>

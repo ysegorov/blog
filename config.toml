@@ -1,0 +1,10 @@
+# The URL the site will be built for
+base_url = "https://ysegorov.github.io"
+title = "Words and Thoughts"
+compile_sass = false
+highlight_code = true
+highlight_theme = "gruvbox-dark"
+insert_anchor_links = true
+build_search_index = false
+generate_rss = true
+[extra]

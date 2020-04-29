@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="{% block lang %}en{% endblock %}">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}{{ config.title or 'Page title' }}{% endblock %}</title>
+        {% block meta %}
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        {% endblock %}
+
+        {#<!-- link rel="apple-touch-icon" href="apple-touch-icon.png" -->#}
+        <!-- Place favicon.ico in the root directory -->
+
+        {% block head %}
+        <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="{{ config.title }} RSS Feed" />
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,Kreon:400,700">
+        <link rel="stylesheet" href="{{ get_url(path="css/normalize.css", cachebust=true)|safe }}">
+        <link rel="stylesheet" href="{{ get_url(path="css/style.css", cachebust=true)|safe }}">
+        {% endblock %}
+    </head>
+    <body>
+        {% block content %}
+        <!-- Add your site or application content here -->
+        <p>Hello world! This is HTML5 Boilerplate.</p>
+        {% endblock %}
+
+        {% block body_js %}
+        {# <script src="//code.jquery.com/jquery-1.12.0.min.js"></script> #}
+        {% endblock %}
+
+        {% block ga %}
+        {% if ga_code %}
+        <!-- Google Analytics: provide ga_code in context to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create',{{ config.ga_code }},'auto');ga('send','pageview');
+        </script>
+        {% endif %}
+        {% endblock %}
+    </body>
+</html>

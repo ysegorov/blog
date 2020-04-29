@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block lang %}{{ lang|default(value="en") }}{% endblock %}
+{% block title %}{% if page.draft %}(draft) {% endif %}{{ page.title }}{% endblock %}
+
+{% block content %}
+{# <pre>{{ __tera_context }}</pre> #}
+<div class="body{% if page.draft %} draft{% endif %}">
+    <div class="content-wrapper">
+        <div class="content {% if page.extra.css_class %}{{ page.extra.css_class }}{% endif %}">
+            {{ page.content|safe }}
+            {% if page.extra.modified -%}
+            <div class="content-last-modified"><small><em>Last modified: {{ page.extra.modified|date(format="%Y-%m-%d %H:%M:%S %:z") }} UTC</em></small></div>
+            {%- endif %}
+            {% if page.earlier or page.later %}
+            <div class="content-prev-next">
+                <div class="content-prev">
+                    {% if page.earlier -%}
+                    <a class="content-prev-link" href="{{ page.earlier.permalink|safe }}">
+                        {% include "svg/chevrons-left.svg.html" %}
+                        <span class="ib">{{ page.earlier.title }}</span>
+                    </a>
+                    {%- endif %}
+                </div>
+                <div class="content-next">
+                    {% if page.later -%}
+                    <a class="content-next-link" href="{{ page.later.permalink|safe }}">
+                        <span class="ib">{{ page.later.title }}</span>
+                        {% include "svg/chevrons-right.svg.html" %}
+                    </a>
+                    {%- endif %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="sidebar-wrapper">
+        {% include "sidebar.html" %}
+    </div>
+</div>
+{% endblock %}
