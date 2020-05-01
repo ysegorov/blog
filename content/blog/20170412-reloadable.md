@@ -7,6 +7,12 @@ modified = 2017-04-12T16:12:00+00:00
 +++
 # Reloadable decorator
 
+<div class="note">
+
+**Update.** `wt` library has been moved to archive, no plans to develop it further.
+
+</div>
+
 [wt][wt] has a feature I'd like to share here. It was one of the first features
 of [wt][wt] I think.
 
@@ -116,7 +122,7 @@ instance in return (till configuration was updated again).
 That's it for **reloadable** decorator. Stay tuned.
 
 
-[wt]: https://ysegorov.github.io/wt-docs/
+[wt]: https://github.com/ysegorov/wt/
 [engine]: https://github.com/ysegorov/wt/blob/master/wt/engine.py#L22
 [aiohttp]: http://aiohttp.readthedocs.io/en/stable/
 [wt-server]: https://github.com/ysegorov/wt/blob/master/wt/server.py

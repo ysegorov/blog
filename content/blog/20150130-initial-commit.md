@@ -7,12 +7,25 @@ modified = 2015-01-30T16:42:00+00:00
 +++
 # Initial commit
 
+<div class="note">
 
-This is just a very first record in the blog.
+**Update 2**. `wt` library has been moved to archive, no plans to develop it
+further. I've switched to [zola][zola] to manage the blog.
 
-It will be powered by <del>[Pelican][pelican]</del> self-made python library
-named **wt**.  
-[Pelican][pelican] is an excellent tool and is definitely worth trying.
+</div>
+
+
+<div class="note">
+
+**Update 1**. ~~This blog is powered by self-made library [wt][wt]~~.
+
+</div>
+
+
+This is just a very first record in the blog which will be powered by
+~~[Pelican][pelican]~~.
 
 
 [pelican]: http://blog.getpelican.com/
+[wt]: https://github.com/ysegorov/wt/
+[zola]: https://www.getzola.org

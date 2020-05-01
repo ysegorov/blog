@@ -8,9 +8,12 @@ created = 2015-03-31T09:52:00+00:00
 +++
 # Markdown preview
 
-*Update*. For [reStructuredText][rst] there is an excellent [restview][restview]
+<div class="note">
+
+**Update.** For [reStructuredText][rst] there is an excellent [restview][restview]
 library which works out-of-the-box.
 
+</div>
 
 It took half-a-workday time to find suitable solution to be able to somehow
 preview rendered markdown files.

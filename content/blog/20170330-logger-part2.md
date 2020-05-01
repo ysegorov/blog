@@ -9,7 +9,7 @@ modified = 2017-03-30T16:45:00+00:00
 
 <div class="note">
 
-This is a follow-up for [part 1][part1] post about logger service.
+**Update.** This is a follow-up for [part 1][part1] post about logger service.
 
 </div>
 

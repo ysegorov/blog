@@ -43,7 +43,6 @@ Full Stack Python/Javascript Web Developer
 
 ### Open source projects
 
-- [wt][wt] - static site generator (*python3*), [documentation][wt-docs]
 - [yagni][yagni] - functional js library for frontend
 - [yagni-dom][yagni-dom] - functional js library for DOM API interactions
 - [yagni-parser][yagni-parser] - functional js library for HTML to
@@ -56,6 +55,8 @@ Full Stack Python/Javascript Web Developer
 - [yagni-loader][yagni-loader] - webpack plugin for HTML to
   [yagni-dom][yagni-dom] compatible js module conversion (uses
   [yagni-parser][yagni-parser] under the hood)
+- [wt][wt] - static site generator (*python3*) - *project has been moved to
+    archive, no plans to develop it further*
 
 ### Web Projects
 
@@ -95,7 +96,6 @@ Full Stack Python/Javascript Web Developer
 
 [chtd]: /2015/chtd/
 [wt]: https://github.com/ysegorov/wt/
-[wt-docs]: https://ysegorov.github.io/wt-docs/
 [tolsha]: https://tolsha.ru
 [passware]: https://www.passware.com
 [yagni]: https://github.com/ysegorov/yagni/

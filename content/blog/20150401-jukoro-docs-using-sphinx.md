@@ -7,6 +7,11 @@ modified = 2015-04-01T10:40:00+00:00
 +++
 # Jukoro documentation using Sphinx
 
+<div class="note">
+
+**Update.** `jukoro` library has been moved to archive, no plans to develop it further.
+
+</div>
 
 Summary about creating python library documentation using [Sphinx][sphinx] and
 publishing it to [GitHub Pages][ghp] (based on [this article][1]).
@@ -46,7 +51,7 @@ $ git push
 ```
 
 
-And now there is [jukoro's documentation][2] available online (still requires
+~~And now there is jukoro's documentation available online~~ (still requires
 some attention).
 
 For some reason I've started [to use markdown][3] for ``readme`` and ``changelog``
@@ -59,6 +64,5 @@ documentation (which is not finished yet).
 [sphinx]: http://sphinx-doc.org/
 [ghp]: https://pages.github.com/
 [1]: http://raxcloud.blogspot.co.uk/2013/02/documenting-python-code-using-sphinx.html
-[2]: https://ysegorov.github.io/jukoro
 [3]: /2015/markdown-live/
 [4]: http://docutils.sourceforge.net/rst.html

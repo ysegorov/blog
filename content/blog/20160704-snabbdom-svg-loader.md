@@ -7,6 +7,11 @@ modified = 2016-07-04T08:45:00+00:00
 +++
 # Webpack loader to use svg icons as snabbdom VNode
 
+<div class="note">
+
+**Update.** This library has been moved to archive, no plans to develop it further.
+
+</div>
 
 I'm exploring FRP for frontend and it looks very interesting to me, especially
 for dataflow using streams.
