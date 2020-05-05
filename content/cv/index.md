@@ -55,6 +55,8 @@ Full Stack Python/Javascript Web Developer
 - [yagni-loader][yagni-loader] - webpack plugin for HTML to
   [yagni-dom][yagni-dom] compatible js module conversion (uses
   [yagni-parser][yagni-parser] under the hood)
+- [mdpreview][mdpreview-rust] - small utility to preview markdown files in
+    browser (written in Rust)
 - [wt][wt] - static site generator (*python3*) - *project has been moved to
     archive, no plans to develop it further*
 
@@ -104,3 +106,4 @@ Full Stack Python/Javascript Web Developer
 [yagni-router]: https://github.com/ysegorov/yagni-router/
 [yagni-loader]: https://github.com/ysegorov/yagni-loader/
 [rollup-plugin-yagni]: https://github.com/ysegorov/rollup-plugin-yagni/
+[mdpreview-rust]: https://github.com/ysegorov/mdpreview-rs
