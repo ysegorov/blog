@@ -10,7 +10,14 @@ created = 2015-03-31T09:52:00+00:00
 
 <div class="note">
 
-**Update.** For [reStructuredText][rst] there is an excellent [restview][restview]
+**Update 2.** I've created [mdpreview][mdpreview-rust] project - self-made
+solution to preview markdown files in browser. The code is written in Rust.
+Short introduction is available [here][mdpreview-rust-intro].
+
+</div>
+<div class="note">
+
+**Update 1.** For [reStructuredText][rst] there is an excellent [restview][restview]
 library which works out-of-the-box.
 
 </div>
@@ -54,3 +61,5 @@ Just great.
 [mdlive]: https://github.com/mobily/markdown-live
 [restview]: https://mg.pov.lt/restview/
 [rst]: http://docutils.sourceforge.net/rst.html
+[mdpreview-rust]: https://github.com/ysegorov/mdpreview-rs
+[mdpreview-rust-intro]: @/blog/20200505-mdpreview.md
