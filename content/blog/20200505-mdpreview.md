@@ -33,7 +33,7 @@ Under the hood [mdpreview][mdpreview-rust] uses following Rust libraries:
 
 Some ideas for the code I've got looking through sources of [zola][zola].
 
-[Ownership][rust-ownership] is a new concept for me and I'm still not sure I'm
+[Ownership][rust-ownership] is a new concept to me and I'm still not sure I'm
 getting it right but Rust is definitely worth trying. Here is the list of
 resources I'm using to study Rust (just for the record):
 
