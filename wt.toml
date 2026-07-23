@@ -1,0 +1,28 @@
+[wt.site]
+title = "Words and Thoughts"
+# subtitle = "Yet another web developer blog"
+author = { name = "Yuri Egorov" }
+verify_links = true
+pages_folder = "pages/"
+static_folder = "static/"
+
+[wt.site.urls]
+site_url = "https://ysegorov.github.io"
+
+[wt.site.extra]
+quote = { text = "I know that I know nothing", author = "Socrates" }
+
+[wt.build]
+output_folder = "output/"
+static = true
+
+[wt.templates]
+templates_folder = "templates/"
+page = "page.html"
+
+[wt.pagination]
+page_size = 10
+orphans = 2
+page_uri = "page{page_number}.html"
+page_number_min_width = 2
+sort_reversed = true

@@ -2,7 +2,7 @@
 <html class="no-js" lang="{% block lang %}en{% endblock %}">
     <head>
         <meta charset="utf-8">
-        <title>{% block title %}{{ config.title or 'Page title' }}{% endblock %}</title>
+        <title>{% block title %}{{ site.title or 'Page title' }}{% endblock %}</title>
         {% block meta %}
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,12 +16,13 @@
         <!-- Place favicon.ico in the root directory -->
 
         {% block head %}
-        <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="{{ config.title }} RSS Feed" />
-        <link rel="dns-prefetch" href="//fonts.googleapis.com">
-        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,Kreon:400,700">
-        <link rel="stylesheet" href="{{ get_url(path="css/normalize.css", cachebust=true)|safe }}">
-        <link rel="stylesheet" href="{{ get_url(path="css/style.css", cachebust=true)|safe }}">
+        <link href="/atom.xml" type="application/xml" rel="alternate" title="{{ site.title }} Atom Feed" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,Kreon:400,700">
+        <link rel="stylesheet" href="{{ local_link('/css/normalize.css') }}?ts={{ now.timestamp()|int }}">
+        <link rel="stylesheet" href="{{ local_link('/css/style.css') }}?ts={{ now.timestamp()|int }}">
         {% endblock %}
+        {% block extra_head %}{% endblock %}
     </head>
     <body>
         {% block content %}
@@ -34,7 +35,7 @@
         {% endblock %}
 
         {% block ga %}
-        {% if ga_code %}
+        {% if site.extra.ga_code %}
         <!-- Google Analytics: provide ga_code in context to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -42,7 +43,7 @@
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create',{{ config.ga_code }},'auto');ga('send','pageview');
+            ga('create',{{ site.extra.ga_code }},'auto');ga('send','pageview');
         </script>
         {% endif %}
         {% endblock %}

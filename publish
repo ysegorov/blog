@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -e
+
+wt build
+
+ghp-import -m "update blog" output/
+git push git@github.com:ysegorov/ysegorov.github.io.git gh-pages:master
+
+echo -e "\n[ok]"

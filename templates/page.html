@@ -1,31 +1,30 @@
 {% extends "base.html" %}
 
-{% block lang %}{{ lang|default(value="en") }}{% endblock %}
+{% block lang %}{{ lang|default("en") }}{% endblock %}
 {% block title %}{% if page.draft %}(draft) {% endif %}{{ page.title }}{% endblock %}
 
 {% block content %}
-{# <pre>{{ __tera_context }}</pre> #}
 <div class="body{% if page.draft %} draft{% endif %}">
     <div class="content-wrapper">
         <div class="content {% if page.extra.css_class %}{{ page.extra.css_class }}{% endif %}">
-            {{ page.content|safe }}
-            {% if page.extra.modified -%}
-            <div class="content-last-modified"><small><em>Last modified: {{ page.extra.modified|date(format="%Y-%m-%d %H:%M:%S %:z") }} UTC</em></small></div>
+            {{ markdown(page.content)|safe }}
+            {% if page.modified_at -%}
+            <div class="content-last-modified"><small><em>Last modified: {{ page.modified_at.strftime("%Y-%m-%d %H:%M:%S UTC") }}</em></small></div>
             {%- endif %}
-            {% if page.earlier or page.later %}
+            {% if prev_page is defined or next_page is defined %}
             <div class="content-prev-next">
                 <div class="content-prev">
-                    {% if page.earlier -%}
-                    <a class="content-prev-link" href="{{ page.earlier.permalink|safe }}">
+                    {% if prev_page is defined and prev_page -%}
+                    <a class="content-prev-link" href="{{ prev_page.uri }}">
                         {% include "svg/chevrons-left.svg.html" %}
-                        <span class="ib">{{ page.earlier.title }}</span>
+                        <span class="ib">{{ prev_page.title }}</span>
                     </a>
                     {%- endif %}
                 </div>
                 <div class="content-next">
-                    {% if page.later -%}
-                    <a class="content-next-link" href="{{ page.later.permalink|safe }}">
-                        <span class="ib">{{ page.later.title }}</span>
+                    {% if next_page is defined and next_page -%}
+                    <a class="content-next-link" href="{{ next_page.uri }}">
+                        <span class="ib">{{ next_page.title }}</span>
                         {% include "svg/chevrons-right.svg.html" %}
                     </a>
                     {%- endif %}
@@ -38,4 +37,20 @@
         {% include "sidebar.html" %}
     </div>
 </div>
+{% endblock %}
+
+{% block extra_head %}
+{{ super() }}
+<!-- see https://www.npmjs.com/package/@highlightjs/cdn-assets?activeTab=code for themes -->
+{% if page.extra.highlight -%}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/base16/humanoid-light.min.css">
+{%- endif %}
+{% endblock %}
+
+{% block body_js %}
+{{ super() }}
+{% if page.extra.highlight -%}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+{%- endif %}
 {% endblock %}
