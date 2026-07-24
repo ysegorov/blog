@@ -11,6 +11,7 @@
             {% if page.modified_at -%}
             <div class="content-last-modified"><small><em>Last modified: {{ page.modified_at.strftime("%Y-%m-%d %H:%M:%S UTC") }}</em></small></div>
             {%- endif %}
+            {% if page.extra.skip_prev_next_pages_nav is not defined or not page.extra.skip_prev_next_pages_nav -%}
             {% if prev_page is defined or next_page is defined %}
             <div class="content-prev-next">
                 <div class="content-prev">
@@ -31,6 +32,7 @@
                 </div>
             </div>
             {% endif %}
+            {%- endif %}
         </div>
     </div>
     <div class="sidebar-wrapper">
